@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@theme {
+    --color-primary: hsl(231, 69%, 60%);
+    --color-secondary: hsl(229, 31%, 21%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+
+    --color-neutral-light-gray: hsl(0, 0%, 97%);
+    --color-neutral-dark-gray: hsl(228, 12%, 41%);
+
+}
