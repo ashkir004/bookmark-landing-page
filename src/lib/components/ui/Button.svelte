@@ -20,7 +20,7 @@
     const variants = {
         solid: { 
             default: `bg-primary text-white shadow-button cursor-pointer`,
-            disabled: `bg-surface text-muted shadow-button/50 cursor-not-allowed`
+            disabled: `bg-surface text-muted shadow-button/10 cursor-not-allowed`
          },
         outline: { 
             default: `border border-primary text-primary bg-white cursor-pointer`,
