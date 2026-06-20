@@ -3,10 +3,12 @@
     import Card from "$lib/components/ui/Card.svelte";
     import Logo from "$lib/components/features/Logo.svelte";
 	import MenuControls from "$lib/components/ui/MenuControls.svelte";
+    import Nav from "$lib/components/features/Nav.svelte";
 </script>
 
 <div class="inner-container flex flex-col items-center justify-center h-screen gap-6 text-center">
     <Logo/>
+    <Nav></Nav>
     <MenuControls />
     <Card class="bg-secondary p-6">
         <Logo theme="dark" />
