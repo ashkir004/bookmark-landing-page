@@ -2,10 +2,12 @@
     import Button from "$lib/components/ui/Button.svelte";
     import Card from "$lib/components/ui/Card.svelte";
     import Logo from "$lib/components/features/Logo.svelte";
+	import MenuControls from "$lib/components/ui/MenuControls.svelte";
 </script>
 
 <div class="inner-container flex flex-col items-center justify-center h-screen gap-6 text-center">
     <Logo/>
+    <MenuControls />
     <Card class="bg-secondary p-6">
         <Logo theme="dark" />
     </Card>
