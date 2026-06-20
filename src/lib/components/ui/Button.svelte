@@ -20,11 +20,11 @@
     const variants = {
         solid: { 
             default: `bg-primary text-white shadow-button cursor-pointer`,
-            disabled: `bg-neutral-light-gray text-neutral-dark-gray shadow-button/50 cursor-not-allowed`
+            disabled: `bg-surface text-muted shadow-button/50 cursor-not-allowed`
          },
         outline: { 
             default: `border border-primary text-primary bg-white cursor-pointer`,
-            disabled: `border border-2 border-neutral-dark-gray text-neutral-dark-gray bg-white cursor-not-allowed`
+            disabled: `border border-2 border-muted text-muted bg-surface cursor-not-allowed`
         } 
     };
 
