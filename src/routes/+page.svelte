@@ -16,6 +16,7 @@
     <Card class="p-6 shadow-lg">
         <Button variant="solid" text="Get it on Chrome" />
         <Button variant="outline" text="Get it on Firefox" />
+        <Button variant="accent" text="Login" />
     </Card>
 
     <Button variant="solid" text="Disabled Button" disabled={true} />

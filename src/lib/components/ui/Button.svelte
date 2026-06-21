@@ -1,7 +1,7 @@
 <script lang="ts">
     import { cn } from "$lib/utils";
 
-    type Variant = 'solid' | 'outline';
+    type Variant = 'solid' | 'outline' | 'accent';
 
     interface ButtonProps {
         variant?: Variant;
@@ -23,8 +23,13 @@
             disabled: `bg-surface text-muted shadow-button/10 cursor-not-allowed`
          },
         outline: { 
-            default: `border border-primary text-primary bg-white cursor-pointer`,
+            default: `border border-primary text-primary bg-surface cursor-pointer`,
             disabled: `border border-2 border-muted text-muted bg-surface cursor-not-allowed`
+        },
+        accent: {
+            default: `bg-accent text-white shadow-button cursor-pointer
+                        hover:bg-surface hover:text-accent hover:border hover:border-2`,
+            disabled: `bg-surface text-muted shadow-button/10 cursor-not-allowed`
         } 
     };
 

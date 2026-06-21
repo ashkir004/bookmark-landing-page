@@ -1,6 +1,7 @@
 <script lang="ts">
     import { cn } from "$lib/utils";
     import NavLink from "../ui/NavLink.svelte";
+    import Button from "../ui/Button.svelte";
 
     type NavProps = {
         class?: string;
@@ -25,4 +26,5 @@
             <NavLink href="/contact">Contact</NavLink>
         </li>
     </ul>
+    <Button variant="accent" text="Login" />
 </nav>
