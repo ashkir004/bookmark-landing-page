@@ -4,6 +4,7 @@
     import Logo from "$lib/components/features/Logo.svelte";
 	import MenuControls from "$lib/components/ui/MenuControls.svelte";
     import Nav from "$lib/components/features/Nav.svelte";
+	import SocialsLink from "$lib/components/features/SocialsLink.svelte";
 </script>
 
 <div class="inner-container flex flex-col items-center justify-center h-screen gap-6 text-center">
@@ -13,6 +14,10 @@
     <Card class="bg-secondary p-6">
         <Logo theme="dark" />
         <Nav variant="inverse"></Nav>
+    </Card>
+    <Card class="p-6 bg-secondary flex flex-col items-center gap-4">
+        <SocialsLink href="https://www.facebook.com" platform="facebook" />
+        <SocialsLink href="https://twitter.com" platform="twitter" />
     </Card>
     <Card class="p-6 shadow-lg">
         <Button variant="solid" text="Get it on Chrome" />
