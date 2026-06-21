@@ -12,6 +12,7 @@
     <MenuControls />
     <Card class="bg-secondary p-6">
         <Logo theme="dark" />
+        <Nav variant="inverse"></Nav>
     </Card>
     <Card class="p-6 shadow-lg">
         <Button variant="solid" text="Get it on Chrome" />

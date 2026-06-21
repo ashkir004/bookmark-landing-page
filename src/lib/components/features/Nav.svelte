@@ -1,14 +1,15 @@
 <script lang="ts">
     import { cn } from "$lib/utils";
     import NavLink from "../ui/NavLink.svelte";
-    import Button from "../ui/Button.svelte";
-
+    
     type NavProps = {
         class?: string;
+        variant?: 'default' | 'inverse';
     }
 
     let {
         class: className= '',
+        variant= 'default'
     }: NavProps = $props();
 
 
@@ -17,14 +18,13 @@
 <nav class={cn('', className)}>
     <ul>
         <li>
-            <NavLink href="/features">Features</NavLink>
+            <NavLink href="/features" variant={variant}>Features</NavLink>
         </li>
         <li>
-            <NavLink href="/pricing">Pricing</NavLink>
+            <NavLink href="/pricing" variant={variant}>Pricing</NavLink>
         </li>
         <li>
-            <NavLink href="/contact">Contact</NavLink>
+            <NavLink href="/contact" variant={variant}>Contact</NavLink>
         </li>
     </ul>
-    <Button variant="accent" text="Login" />
 </nav>
