@@ -1,18 +1,21 @@
 <script lang="ts">
-    import Button from "$lib/components/ui/Button.svelte";
-    import Card from "$lib/components/ui/Card.svelte";
-    import Logo from "$lib/components/features/Logo.svelte";
-	import MenuControls from "$lib/components/ui/MenuControls.svelte";
-    import Nav from "$lib/components/features/Nav.svelte";
-	import SocialsLink from "$lib/components/features/SocialsLink.svelte";
+    // import Button from "$lib/components/ui/Button.svelte";
+    // import Card from "$lib/components/ui/Card.svelte";
+    // import Logo from "$lib/components/features/Logo.svelte";
+	// import MenuControls from "$lib/components/ui/MenuControls.svelte";
+    // import Nav from "$lib/components/features/Nav.svelte";
+	// import SocialsLink from "$lib/components/features/SocialsLink.svelte";
+    import Navbar from "$lib/components/layout/Navbar.svelte";
 </script>
 
-<div class="inner-container flex flex-col items-center justify-center h-screen gap-6 text-center">
+<Navbar />
+
+<!-- <div class="inner-container flex flex-col items-center justify-center h-screen gap-6 text-center">
     <Logo/>
     <Nav></Nav>
     <MenuControls />
     <Card class="bg-secondary p-6">
-        <Logo theme="dark" />
+        <Logo variant="dark" />
         <Nav variant="inverse"></Nav>
     </Card>
     <Card class="p-6 bg-secondary flex flex-col items-center gap-4">
@@ -27,4 +30,4 @@
 
     <Button variant="solid" text="Disabled Button" disabled={true} />
     <Button variant="outline" text="Disabled Button" disabled={true} />
-</div>
+</div> -->

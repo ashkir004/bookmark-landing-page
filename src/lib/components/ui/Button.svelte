@@ -19,11 +19,11 @@
 
     const variants = {
         solid: { 
-            default: `bg-primary text-white shadow-button cursor-pointer`,
+            default: `bg-primary text-white shadow-button cursor-pointer hover:bg-surface hover:text-primary hover:border hover:border-primary`,
             disabled: `bg-surface text-muted shadow-button/10 cursor-not-allowed`
          },
         outline: { 
-            default: `border border-primary text-primary bg-surface cursor-pointer`,
+            default: `border-2 border-white bg-transparent text-white cursor-pointer`,
             disabled: `border border-2 border-muted text-muted bg-surface cursor-not-allowed`
         },
         accent: {
