@@ -23,7 +23,7 @@
             disabled: `bg-surface text-muted shadow-button/10 cursor-not-allowed`
          },
         outline: { 
-            default: `border-2 border-white bg-transparent text-white cursor-pointer`,
+            default: `border-2 border-white bg-transparent text-white cursor-pointer hover:text-primary hover:bg-surface`,
             disabled: `border border-2 border-muted text-muted bg-surface cursor-not-allowed`
         },
         accent: {

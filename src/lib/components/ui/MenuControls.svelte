@@ -19,5 +19,5 @@
 </script>
 
 <button class={cn('cursor-pointer', className)} onclick={toggle}>
-    <img src={isOpen ? closeIcon : hamburgerIcon} alt="Menu" />
+    <img src={isOpen ? closeIcon : hamburgerIcon} alt="Menu" class="min-w-5" />
 </button>
