@@ -1,20 +1,22 @@
 <script lang="ts">
     import { cn } from "$lib/utils";
 
-    type Variant = 'solid' | 'outline' | 'accent' | 'solidSecondary';
+    type Variant = 'solid' | 'outline' | 'accent' | 'solidSecondary' | 'ghost';
 
     interface ButtonProps {
         variant?: Variant;
         class?: string;
         disabled?: boolean;
         text?: string;
+        onclick?: () => void;
     }
 
     let {
         variant= 'solid',
         class: className= '',
         disabled= false,
-        text= 'Button'
+        text= 'Button',
+        onclick= () => {},
     }: ButtonProps = $props();
 
     const variants = {
@@ -34,12 +36,17 @@
             default: `bg-accent text-white shadow-button cursor-pointer
                         hover:bg-surface hover:text-accent hover:border hover:border-2`,
             disabled: `bg-surface text-muted shadow-button/10 cursor-not-allowed`
+        },
+        ghost: {
+            default: `bg-transparent text-muted cursor-pointer hover:text-accent`,
+            disabled: `bg-transparent text-muted cursor-not-allowed`
         } 
     };
 
 </script>
 
 <button
+    onclick={onclick}
     disabled={disabled}
     class={cn(`inline-flex items-center justify-center rounded-md`,
         variants[variant][disabled ? 'disabled' : 'default'],
