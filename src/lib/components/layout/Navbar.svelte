@@ -13,13 +13,13 @@
 </script>
 
 <div class="grid grid-cols-1 grid-rows-1">
-    <div class="col-span-full row-span-full flex flex-row items-center justify-between px-6 md:px-16 py-8">
+    <div class="col-span-full row-span-full flex flex-row items-center justify-between lg:justify-start px-6 md:px-16 py-8">
         
         <Logo class={menuOpen ? 'hidden' : 'block'} />
         
-        <div class="flex flex-row items-center justify-between gap-12">
-            <Nav class="hidden lg:flex gap-12" />
-            <Button variant="accent" text="Login" class="hidden lg:block" />
+        <div class="flex flex-row items-center justify-end gap-12 lg:w-full">
+            <Nav class="hidden lg:flex lg:flex-row gap-12" />
+            <Button variant="accent" text="Login" class="hidden lg:block px-8 py-2 min-w-28" />
         </div>
         
         <MenuControls isOpen={menuOpen} toggle={toggle} class="lg:hidden {menuOpen ? 'hidden' : ''}" />
