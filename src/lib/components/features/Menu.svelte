@@ -29,7 +29,7 @@
         <Nav class="justify-items-stretch text-center text-surface" 
             variant="inverse" />
     {/if}
-    <Button variant="outline" text="Login" class="justify-items-stretch items-center uppercase" />
+    <Button variant="outline" text="Login" class="justify-items-stretch items-center uppercase p-2" />
 
     <div class="socials col-span-2 flex flex-row gap-10 self-center mt-auto">
         <SocialsLink href="https://www.facebook.com" platform="facebook"/>
