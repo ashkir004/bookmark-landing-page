@@ -8,6 +8,8 @@
 @plugin '@tailwindcss/typography';
 
 @theme {
+    --breakpoint-xs: 0rem;
+
     --color-primary: hsl(231, 69%, 60%);
     --color-secondary: hsl(229, 31%, 21%);
     --color-accent: hsl(0, 94%, 66%);

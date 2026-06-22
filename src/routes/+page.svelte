@@ -6,9 +6,11 @@
     // import Nav from "$lib/components/features/Nav.svelte";
 	// import SocialsLink from "$lib/components/features/SocialsLink.svelte";
     import Navbar from "$lib/components/layout/Navbar.svelte";
+    import Hero from "$lib/components/layout/Hero.svelte";
 </script>
 
 <Navbar />
+<Hero />
 
 <!-- <div class="inner-container flex flex-col items-center justify-center h-screen gap-6 text-center">
     <Logo/>

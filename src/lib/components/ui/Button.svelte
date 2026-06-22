@@ -1,7 +1,7 @@
 <script lang="ts">
     import { cn } from "$lib/utils";
 
-    type Variant = 'solid' | 'outline' | 'accent';
+    type Variant = 'solid' | 'outline' | 'accent' | 'solidSecondary';
 
     interface ButtonProps {
         variant?: Variant;
@@ -22,6 +22,10 @@
             default: `bg-primary text-white shadow-button cursor-pointer hover:bg-surface hover:text-primary hover:border hover:border-primary`,
             disabled: `bg-surface text-muted shadow-button/10 cursor-not-allowed`
          },
+        solidSecondary: {
+            default: `bg-muted/10 text-muted font-semiBold shadow-button/10 cursor-pointer hover:bg-surface hover:text-muted hover:border hover:border-muted`,
+            disabled: `bg-surface text-muted shadow-button/10 cursor-not-allowed`,
+        },
         outline: { 
             default: `border-2 border-white bg-transparent text-white cursor-pointer hover:text-primary hover:bg-surface`,
             disabled: `border border-2 border-muted text-muted bg-surface cursor-not-allowed`
@@ -37,7 +41,7 @@
 
 <button
     disabled={disabled}
-    class={cn(`inline-flex items-center justify-center rounded-md px-8 py-3`,
+    class={cn(`inline-flex items-center justify-center rounded-md`,
         variants[variant][disabled ? 'disabled' : 'default'],
         className
     )}
