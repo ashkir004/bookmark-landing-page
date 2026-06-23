@@ -38,8 +38,7 @@
     lg:grid-cols-2 lg:grid-rows-auto
 ">
 
-    <div class="flex flex-col gap-4 items-center text-center mt-24 lg:col-span-full md:max-w-[62%] lg:max-w-[50%] xl:max-w-[42%] justify-self-center
-        px-6 md:px-16 lg:pl-16 lg:pr-0">
+    <div class="flex flex-col gap-4 items-center text-center lg:col-span-full max-w-80 md:max-w-120 justify-self-center">
         <h1 class="text-heading text-secondary">Features</h1>
         <p class="text-body text-muted/70">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
     </div>
