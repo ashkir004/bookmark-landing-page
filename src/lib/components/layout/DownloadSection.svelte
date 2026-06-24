@@ -33,9 +33,9 @@
 </script>
 
 <section class="flex flex-col gap-10 md:gap-16 lg:gap-12 items-center">
-    <div class="text-center max-w-80 md:max-w-130">
-        <h2 class="text-heading text-secondary text-center mb-4">Download the extension</h2>
-        <p class="text-body text-muted/70 text-center mb-6">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
+    <div class="text-center max-w-80 md:max-w-130 flex flex-col gap-4">
+        <h2 class="text-heading text-secondary text-center">Download the extension</h2>
+        <p class="text-body text-muted/70 text-center">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
     </div>
     <div class="flex flex-col gap-10 md:gap-2 lg:gap-8 items-center
         md:flex-row md:justify-center">

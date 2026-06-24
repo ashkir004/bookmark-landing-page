@@ -21,4 +21,12 @@ export default defineConfig({
 			adapter: adapter()
 		})
 	]
+	,
+	// Ensure Vite processes Svelte files from the bits-ui package instead of treating it as external.
+	optimizeDeps: {
+		include: ['bits-ui']
+	},
+	ssr: {
+		noExternal: ['bits-ui']
+	}
 });
