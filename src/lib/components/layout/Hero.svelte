@@ -9,11 +9,13 @@
         <img class="col-span-full row-span-full" src={HeroIllustration} alt="Hero: A bookmark Manager Screen" />
     </div>
     <div class="flex flex-col gap-6 col-start-1 row-start-1">
-        <div class="flex flex-col gap-6 text-center px-6 md:px-16 lg:pl-16 lg:pr-0 lg:text-start">
+    <!-- px-6 md:px-16 lg:pl-16 lg:pr-0  -->
+        <div class="flex flex-col gap-6 text-center lg:text-start">
             <h1 class="text-display text-center lg:text-start text-secondary capitalize">A Simple Bookmark Manager</h1>
             <p class="text-body md:text-lead text-muted/70 text-pretty">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
         </div>
-        <div class="flex flex-row gap-4 px-6 md:px-16 items-center justify-center lg:justify-start">
+        <!-- px-6 md:px-16 -->
+        <div class="flex flex-row gap-4 items-center justify-center lg:justify-start">
             <Button variant="solid" text="Get it on Chrome" class="px-3 py-3 md:px-6" />
             <Button variant="solidSecondary" text="Get it on Firefox" class="px-3 py-3 md:px-6" />
         </div>

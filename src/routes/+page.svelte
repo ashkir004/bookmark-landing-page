@@ -11,9 +11,10 @@
     let { form } : PageProps = $props();
     
 </script>
-
-<header class="xl:pl-12 2xl:pl-24 mb-20">
-    <Navbar />
+<!-- xl:pl-12 2xl:pl-24 -->
+<header class=" mb-20 lg:max-w-5xl lg:ml-15
+    xl:ml-auto xl:max-w-11/12">
+    <Navbar class=" lg:max-w-4xl xl:max-w-11/12" />
     <Hero />
 </header>
 <main class="flex flex-col gap-20">
@@ -23,9 +24,9 @@
     <CTA form={form} />
 </main>
 
-<footer>
+<footer class="bg-secondary">
     <Footer class="bg-secondary w-full
     flex flex-col gap-12 md:gap-16 items-center py-8 
     md:flex-row md:justify-center
-    lg:px-20 xl:px-32" />
+    lg:max-w-4xl xl:max-w-10/12 mx-auto" />
 </footer>
