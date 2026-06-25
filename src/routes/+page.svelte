@@ -1,7 +1,7 @@
 <script lang="ts">
     import Navbar from "$lib/components/layout/Navbar.svelte";
     import Hero from "$lib/components/layout/Hero.svelte";
-	import Features from "$lib/components/layout/Features.svelte";
+	import FeaturesSection from "$lib/components/layout/FeaturesSection.svelte";
 	import DownloadSection from "$lib/components/layout/DownloadSection.svelte";
     import FAQs from "$lib/components/features/FAQs.svelte";
     import CTA from "$lib/components/features/CTA.svelte";
@@ -18,7 +18,7 @@
     <Hero />
 </header>
 <main class="flex flex-col gap-20">
-    <Features />
+    <FeaturesSection />
     <DownloadSection />
     <FAQs class="mt-20" />
     <CTA form={form} />
