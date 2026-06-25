@@ -5,6 +5,10 @@
 	import DownloadSection from "$lib/components/layout/DownloadSection.svelte";
     import FAQs from "$lib/components/features/FAQs.svelte";
     import CTA from "$lib/components/features/CTA.svelte";
+
+    import type { PageProps } from './$types';
+    let { form } : PageProps = $props();
+    
 </script>
 
 <header class="xl:pl-12 2xl:pl-24 mb-20">
@@ -15,5 +19,5 @@
     <Features />
     <DownloadSection />
     <FAQs class="mt-20" />
-    <CTA />
+    <CTA form={form} />
 </main>
