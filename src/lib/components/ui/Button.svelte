@@ -21,20 +21,20 @@
 
     const variants = {
         solid: { 
-            default: `bg-primary text-white shadow-button cursor-pointer hover:bg-surface hover:text-primary hover:border hover:border-primary`,
+            default: `bg-primary text-white shadow-button cursor-pointer hover:bg-surface hover:text-primary hover:border-2 hover:border-primary`,
             disabled: `bg-surface text-muted shadow-button/10 cursor-not-allowed`
          },
         solidSecondary: {
-            default: `bg-muted/10 text-muted font-semiBold shadow-button/10 cursor-pointer hover:bg-surface hover:text-muted hover:border hover:border-muted`,
+            default: `bg-muted/10 text-muted font-semiBold shadow-button/10 cursor-pointer hover:bg-surface hover:text-muted hover:border-2 hover:border-muted`,
             disabled: `bg-surface text-muted shadow-button/10 cursor-not-allowed`,
         },
         outline: { 
-            default: `border-2 border-white bg-transparent text-white cursor-pointer hover:text-primary hover:bg-surface`,
+            default: `border border-2 border-white bg-transparent text-white cursor-pointer hover:text-primary hover:bg-surface`,
             disabled: `border border-2 border-muted text-muted bg-surface cursor-not-allowed`
         },
         accent: {
             default: `bg-accent text-white shadow-button cursor-pointer
-                        hover:bg-surface hover:text-accent hover:border hover:border-2`,
+                        hover:bg-surface hover:text-accent hover:border-2 hover:border-accent`,
             disabled: `bg-surface text-muted shadow-button/10 cursor-not-allowed`
         },
         ghost: {
@@ -48,7 +48,7 @@
 <button
     onclick={onclick}
     disabled={disabled}
-    class={cn(`inline-flex items-center justify-center rounded-md`,
+    class={cn(`inline-flex items-center justify-center rounded-md border-2 border-transparent`,
         variants[variant][disabled ? 'disabled' : 'default'],
         className
     )}
