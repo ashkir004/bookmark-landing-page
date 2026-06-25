@@ -1,42 +1,35 @@
-# sv
+# Bookmark Landing Page
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A responsive landing page for a bookmark manager built with SvelteKit, TypeScript, and Tailwind CSS. This project recreates the Frontend Mentor design with a modern UI, reusable components, and a polished mobile-to-desktop experience.
 
-## Creating a project
+## About
 
-If you're seeing this, you've probably already done this step. Congrats!
+- Clean hero section that introduces the product and primary call to action
+- Feature tabs
+- FAQ accordion for common user questions
+- Responsive layout with reusable Svelte components and shared UI primitives
 
-```sh
-# create a new project
-npx sv create my-app
-```
+## Tech Stack
 
-To recreate this project with the same configuration:
+- SvelteKit
+- TypeScript
+- Tailwind CSS
+- shadcn-svelte / bits-ui
 
-```sh
-# recreate this project
-npx sv@0.16.1 create --template minimal --types ts --add prettier eslint tailwindcss="plugins:forms,typography" --install npm .
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Development
 
 ```sh
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
-
-To create a production version of your app:
+## Build
 
 ```sh
 npm run build
+npm run preview
 ```
 
-You can preview the production build with `npm run preview`.
+## Links
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+- [Live Site: bookmark-landing-page](https://bookmark-landing-page-ashkir.netlify.app/)
