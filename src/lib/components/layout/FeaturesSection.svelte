@@ -60,11 +60,11 @@
             h-full top-0 left-0 rounded-r-full"></span>
         
         {#if activeTab === 1}
-            <enhanced:img src={featureImg1} alt="Feature Illustration" width="288" height="216" class="ml-auto z-10 w-full h-full object-contain lg:object-right -translate-y-10" />
+            <img src={featureImg1} alt="Feature Illustration" width="288" height="216" class="ml-auto z-10 w-full h-full object-contain lg:object-right -translate-y-10" />
         {:else if activeTab === 2}
-            <enhanced:img src={featureImg2} alt="Feature Illustration" width="288" height="216" class="m-auto z-10 w-full h-full object-contain lg:object-right -translate-y-10" />
+            <img src={featureImg2} alt="Feature Illustration" width="288" height="216" class="m-auto z-10 w-full h-full object-contain lg:object-right -translate-y-10" />
         {:else if activeTab === 3}
-            <enhanced:img src={featureImg3} alt="Feature Illustration" width="288" height="216" class="m-auto z-10 w-full h-full object-contain lg:object-right -translate-y-10" />
+            <img src={featureImg3} alt="Feature Illustration" width="288" height="216" class="m-auto z-10 w-full h-full object-contain lg:object-right -translate-y-10" />
         {/if}
 
     </div>
