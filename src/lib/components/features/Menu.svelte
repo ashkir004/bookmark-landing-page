@@ -27,7 +27,7 @@
     </div>
     {#if isOpen}
         <Nav class="justify-items-stretch text-center text-surface" 
-            variant="inverse" />
+            variant="inverse" divided={true} />
     {/if}
     <Button variant="outline" text="Login" class="justify-items-stretch items-center uppercase p-2" />
 

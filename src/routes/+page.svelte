@@ -5,6 +5,7 @@
 	import DownloadSection from "$lib/components/layout/DownloadSection.svelte";
     import FAQs from "$lib/components/features/FAQs.svelte";
     import CTA from "$lib/components/features/CTA.svelte";
+    import Footer from "$lib/components/layout/Footer.svelte";
 
     import type { PageProps } from './$types';
     let { form } : PageProps = $props();
@@ -21,3 +22,10 @@
     <FAQs class="mt-20" />
     <CTA form={form} />
 </main>
+
+<footer>
+    <Footer class="bg-secondary w-full
+    flex flex-col gap-12 md:gap-16 items-center py-8 
+    md:flex-row md:justify-center
+    lg:px-20 xl:px-32" />
+</footer>

@@ -19,8 +19,8 @@
     }: NavLinkProps = $props();
 
     const variantStyles = {
-        default: 'text-secondary hover:text-accent',
-        inverse: 'text-white hover:text-accent'
+        default: 'uppercase text-secondary hover:text-accent',
+        inverse: 'uppercase text-white hover:text-accent'
     }
     
 </script>
