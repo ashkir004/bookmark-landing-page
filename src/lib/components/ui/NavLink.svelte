@@ -5,7 +5,7 @@
     type variant = 'default' | 'inverse';
     
     type NavLinkProps = {
-        href: `/${string}`;
+        href: string;
         class?: string;
         variant?: variant;
         children?: Snippet;
@@ -27,5 +27,5 @@
 
 <a 
     class={cn(variantStyles[variant], className)}
-    href={'#/' + href}
+    href={href}
 >{@render children?.()}</a>
