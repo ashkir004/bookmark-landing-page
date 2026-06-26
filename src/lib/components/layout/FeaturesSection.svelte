@@ -31,6 +31,8 @@
         }
     ];
 
+    let current = $derived(tabs.find((t) => t.id === activeTab));
+
     function setActiveTab(tabId: number) {
         activeTab = tabId;
     }
@@ -71,8 +73,8 @@
 
     <div class="lg:row-start-3 lg:row-end-4 lg:items-start lg:text-start flex flex-col gap-4 md:gap-6 items-center justify-center text-center
         px-5 md:px-16 lg:pl-0 lg:max-w-[96%] xl:max-w-[70%]">
-        <h2 class="text-heading text-secondary">{tabs.find((t) => t.id === activeTab)?.content.title}</h2>
-        <p class="text-body text-muted/70">{tabs.find((t) => t.id === activeTab)?.content.description}</p>
+        <h2 class="text-heading text-secondary">{current?.content.title}</h2>
+        <p class="text-body text-muted/70">{current?.content.description}</p>
         <Button variant="solid" text="More Info" class="px-6 py-2" />
     </div>
 </div>
