@@ -20,16 +20,19 @@
     }: MenuProps = $props();
 
 </script>
-<div class={cn('w-screen h-screen bg-primary/95 flex flex-col gap-10', className)}>
+<div class={cn('w-screen h-screen fixed overflow-scroll bg-secondary/95 flex flex-col gap-10', className)}>
     <div class="flex flex-row justify-between items-center">
         <Logo variant="dark" class="" />
         <MenuControls isOpen={isOpen} toggle={toggle} class="lg:hidden  justify-self-end self-start" />
     </div>
     {#if isOpen}
         <Nav class="justify-items-stretch text-center text-surface" 
-            variant="inverse" divided={true} />
+            variant="inverse" divided={true} toggle={toggle} />
     {/if}
-    <Button variant="outline" text="Login" class="justify-items-stretch items-center uppercase p-2" />
+    <Button variant="outline"
+            onclick={toggle} 
+            text="Login" 
+            class="justify-items-stretch items-center uppercase p-2" />
 
     <div class="socials col-span-2 flex flex-row gap-10 self-center mt-auto">
         <SocialsLink href="https://www.facebook.com" platform="facebook"/>

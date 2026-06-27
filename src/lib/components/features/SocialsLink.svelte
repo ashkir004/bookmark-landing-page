@@ -14,7 +14,11 @@
     }: SocialsLinkProps = $props();    
 </script>
 
-<a aria-label={platform === 'facebook' ? 'Facebook' : 'Twitter'} class='hover:fill-accent' href={href} target="_blank" rel="noopener noreferrer">
+<a aria-label={platform === 'facebook' ? 'Facebook' : 'Twitter'} 
+        class='hover:fill-accent' 
+        href={href} 
+        target="_blank" 
+        rel="noopener noreferrer">
     {#if platform === 'facebook'}
         <svg 
             class={cn(' fill-white hover:fill-accent', className)}

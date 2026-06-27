@@ -6,16 +6,34 @@
     import FAQs from "$lib/components/features/FAQs.svelte";
     import CTA from "$lib/components/features/CTA.svelte";
     import Footer from "$lib/components/layout/Footer.svelte";
+    import Menu from "$lib/components/features/Menu.svelte";
 
     import type { PageProps } from './$types';
     let { form } : PageProps = $props();
+
+    let menuOpen = $state(false);
+
+    function toggle() {
+        menuOpen = !menuOpen;
+        document.body.style.overflow = menuOpen ? 'hidden' : 'auto';
+    }
     
 </script>
 <!-- xl:pl-12 2xl:pl-24 -->
 <header class=" mb-20 lg:max-w-5xl lg:ml-15
-    xl:ml-auto xl:max-w-11/12">
-    <Navbar class=" lg:max-w-4xl xl:max-w-11/12" />
-    <Hero />
+    xl:ml-auto xl:max-w-11/12
+    grid grid-cols-1 grid-rows-1">
+    <div>
+        <Navbar class=" lg:max-w-4xl xl:max-w-11/12"
+            menuOpen={menuOpen}
+            toggle={toggle}
+        />
+        <Hero />
+    </div>
+    <Menu 
+        isOpen={menuOpen} 
+        class="lg:hidden {!menuOpen ? 'hidden' : ''} px-6 md:px-16 py-8 col-span-full row-span-full z-10 uppercase" 
+        toggle={toggle} />
 </header>
 <main class="flex flex-col gap-20">
     <FeaturesSection />

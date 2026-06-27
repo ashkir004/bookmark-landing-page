@@ -8,6 +8,7 @@
         href: string;
         class?: string;
         variant?: variant;
+        toggle?: () => void;
         children?: Snippet;
     }
 
@@ -15,6 +16,7 @@
         href= '/',
         children,
         variant= 'default',
+        toggle= () => {},
         class: className= ''
     }: NavLinkProps = $props();
 
@@ -28,4 +30,5 @@
 <a 
     class={cn(variantStyles[variant], className)}
     href={href}
+    onclick={toggle}
 >{@render children?.()}</a>
