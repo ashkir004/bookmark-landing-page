@@ -14,7 +14,7 @@
 
 </script>
 
-<div class="{cn('bg-primary text-surface flex flex-col items-center gap-6 md:gap-8 text-center py-12', className)}">
+<div id="contact-us" class="{cn('bg-primary text-surface flex flex-col items-center gap-6 md:gap-8 text-center py-12', className)}">
     <div class="flex flex-col gap-2 md:gap-4 max-w-sm md:max-w-md">
         <p class="text-eyebrow">35,000+ already joined</p>
         <h1 class="text-heading">Stay up-to-date with what we're doing</h1>

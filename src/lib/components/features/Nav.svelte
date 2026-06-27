@@ -19,13 +19,13 @@
 <nav>
 <ul class={cn('', className)}>
     <li class="{divided ? 'border-t-2 border-surface/15 py-8' : ''}">
-        <NavLink href="/features" variant={variant}>Features</NavLink>
+        <NavLink href="#features" variant={variant}>Features</NavLink>
     </li>
     <li class="{divided ? 'border-t-2 border-surface/15 py-8' : ''}">
-        <NavLink href="/pricing" variant={variant}>Pricing</NavLink>
+        <NavLink href="#download" variant={variant}>Download</NavLink>
     </li>
     <li class="{divided ? 'border-t-2 border-surface/15 py-8 border-b-2' : ''}">
-        <NavLink href="/contact" variant={variant}>Contact</NavLink>
+        <NavLink href="#contact-us" variant={variant}>Contact Us</NavLink>
     </li>
 </ul>
 </nav>

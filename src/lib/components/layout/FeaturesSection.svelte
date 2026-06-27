@@ -38,7 +38,7 @@
     }
 </script>
 
-<div class="grid grid-cols-1 grid-rows-auto gap-8 md:gap-16 lg:gap-20 mb-10
+<div id="features" class="grid grid-cols-1 grid-rows-auto gap-8 md:gap-16 lg:gap-20 mb-10
     lg:grid-cols-2 lg:grid-rows-auto
 ">
 
